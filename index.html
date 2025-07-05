@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Compass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-globe-americas"></i> Cultural Compass</h1>
+            <p class="tagline">Discover cultural insights for your next destination</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="country-input" placeholder="Enter a country name...">
+            <button id="search-btn">Explore</button>
+        </div>
+
+        <div class="error" id="error"></div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Gathering cultural insights...</p>
+        </div>
+
+        <div class="results" id="results">
+            <div class="country-header">
+                <img id="country-flag" class="flag" src="" alt="Country flag">
+                <div class="country-info">
+                    <h2 class="country-name" id="country-name">Country Name</h2>
+                    <div class="country-details">
+                        <span id="country-capital"></span>
+                        <span id="country-population"></span>
+                        <span id="country-language"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sections">
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-cloud-sun"></i> Current Weather</h3>
+                    <div class="weather-card" id="weather-info">
+                        <i class="fas fa-sun weather-icon"></i>
+                        <div>
+                            <div class="weather-temp">24°C</div>
+                            <div class="weather-details">Sunny • Humidity: 65%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-landmark"></i> Cultural Etiquette</h3>
+                    <div id="cultural-info">
+                        Loading cultural information...
+                    </div>
+                </div>
+
+                
+
+                <div class="section">
+                    <h3 class="section-title"><i class="fas fa-calendar-alt"></i> Local Festivals</h3>
+                    <div id="festivals-info">
+                        Loading festival information...
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <h3 class="section-title"><i class="fas fa-question-circle"></i> Culture Quiz</h3>
+                <div id="quiz-area">
+                    <p class="quiz-question">What is the traditional greeting in this country?</p>
+                    <div class="quiz-options">
+                        <div class="quiz-option">Handshake</div>
+                        <div class="quiz-option">Bow</div>
+                        <div class="quiz-option">Kiss on the cheek</div>
+                        <div class="quiz-option">Namaste</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
